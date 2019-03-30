@@ -22,17 +22,15 @@ int main(){
         }
     }
     // show
-    for (int i = 0; i < count; i++) {
-        printf("%s      G1  G2  G3  G4\n",fac[i]);
-        for (int k = 0; k < 3; k++) {
-            printf("Course %d : ",k+1);
-            printf("%d  %d  %d  %d\n",num[i][0][k],num[i][1][k],num[i][2][k],num[i][3][k]);
-                
+
+    for (int i = 0; i < 3; i++) {
+        printf("Course %d\n",i+1);
+        for (int j = 0; j < count; j++) {
+            printf("%s\n",fac[j]);
+            for (int k = 0; k < 1; k++) {
+                printf("%d  %d  %d  %d\n",num[j][0][i],num[j][1][i],num[j][2][i],num[j][3][i]);
+            }
         }
     }
-    
-        
-    
-    
     
 }
